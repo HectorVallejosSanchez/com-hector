@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-icons/hardware-icons.html">
+<!--
+`com-hector`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="com-hector">
+  <template>
+    <style is="custom-style">
+      :host {
+        display: block;
+      }
+      iron-icon{
+        color: blue;
+      }
+    </style>
+   
+    <h2><iron-icon icon="hardware:toys"></iron-icon> Adidas [[prop1]]</h2>
+  </template>
+  
+  <script>
+    Polymer({
+
+      is: 'com-hector',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: '',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
